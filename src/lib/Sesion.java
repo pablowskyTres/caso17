@@ -25,8 +25,8 @@ public class Sesion {
     private static String myDriver = "oracle.jdbc.driver.OracleDriver";
     private static String myUrl = "jdbc:oracle:thin:@localhost:1521:XE";
     private Statement stmt;
-    String user = "system";
-    String clave = "uu4ll5sp.";
+    String user = "Proyecto";
+    String clave = "123456";
     private Connection cnn;
     
     private Sesion() {
