@@ -41,7 +41,8 @@ public class Caso17 {
 //            System.out.println("Select persona por rut: nombre "+rs2.getString("nombre1"));
 //        }
 //        perDao1.deletePersonaByRut(persona2.getRut());
-        System.out.println("Delete persona "+persona2.getRut());
+        System.out.println("Delete persona 2"+persona2.getRut());
+        System.out.println("Delete persona 2"+persona2.getRut());
         
         rs2 = perDao1.getPersonaAll();
         while(rs2.next()){
