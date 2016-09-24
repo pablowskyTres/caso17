@@ -40,14 +40,18 @@ public class Caso17 {
 //            System.out.println("Select persona por rut: id "+rs2.getString("id"));
 //            System.out.println("Select persona por rut: nombre "+rs2.getString("nombre1"));
 //        }
-        perDao1.deletePersonaByRut(persona2.getRut());
-        System.out.println("Delete persona "+persona2.getRut());
+//        perDao1.deletePersonaByRut(persona2.getRut());
+//        System.out.println("Delete persona 2"+persona2.getRut());
+        System.out.println("Delete persona 2"+persona2.getRut());
         
         rs2 = perDao1.getPersonaAll();
         while(rs2.next()){
             System.out.println(rs2.getString("id"));
             System.out.println(rs2.getString("nombre1"));
         }
+        
+        persona2.setApellidoPaterno("NN");
+        perDao1.updatePersona(persona2);
     }
     
 }
